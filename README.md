@@ -1,73 +1,145 @@
-# React + TypeScript + Vite
+# GreenTray 🌱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GreenTray is an online nursery platform designed to help farmers and gardeners explore, learn, and purchase plant trays and nursery products easily.
 
-Currently, two official plugins are available:
+The platform allows users to browse products, build custom trays, read educational guides, and manage their purchases.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🌱 Browse nursery trays and plant products
+* 🧺 Shopping cart system
+* 🛠 Custom tray builder
+* 📚 Learning guides and blog section
+* 👤 User authentication
+* 📊 Dashboard for users
+* 📱 Responsive design for mobile and desktop
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **React**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS**
+* **Supabase**
+* **Node.js**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+
+```
+greentray-react-app
+│
+├── public
+│   └── images
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── context
+│   ├── assets
+│   └── lib
+│
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
+
 ```
+git clone https://github.com/maheshkale2006/greentray1.git
+```
+
+Go into the project directory:
+
+```
+cd greentray-react-app
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+---
+
+## ▶️ Run Development Server
+
+```
+npm run dev
+```
+
+The app will start at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗 Build for Production
+
+```
+npm run build
+```
+
+This will create a **dist folder** containing the production-ready website.
+
+---
+
+## 🌐 Deployment
+
+You can deploy the project using:
+
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
+
+Recommended: **Vercel**
+
+Steps:
+
+1. Login to Vercel
+2. Import the GitHub repository
+3. Click **Deploy**
+
+---
+
+## 📊 Analytics
+
+You can integrate **Microsoft Clarity** to track:
+
+* User behavior
+* Click heatmaps
+* Screen recordings
+
+Add the Clarity script inside:
+
+```
+index.html
+```
+
+inside the `<head>` section.
+
+---
+
+## 📧 Contact
+
+Project by **Mahesh Kale**
+
+If you have suggestions or improvements, feel free to contribute.
+
+---
+
+⭐ If you like this project, consider giving it a **star on GitHub**.
